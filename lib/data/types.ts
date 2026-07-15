@@ -32,54 +32,57 @@ export type Metric = {
 /** Ordered, typed content blocks that compose a product detail page. */
 export type ProductSection =
   | {
-      type: "feature-grid";
-      eyebrow?: string;
-      title: string;
-      description?: string;
-      features: Benefit[];
-    }
+    type: "feature-grid";
+    eyebrow?: string;
+    title: string;
+    description?: string;
+    features: Benefit[];
+  }
   | {
-      type: "split-feature";
-      eyebrow?: string;
-      title: string;
-      description: string;
-      bullets?: string[];
-      metrics?: Metric[];
-      reverse?: boolean;
-    }
+    type: "split-feature";
+    eyebrow?: string;
+    productImgSecond?: string;
+    title: string;
+    description: string;
+    bullets?: string[];
+    metrics?: Metric[];
+    reverse?: boolean;
+  }
   | {
-      type: "stat-band";
-      eyebrow?: string;
-      title?: string;
-      stats: Metric[];
-    }
+    type: "stat-band";
+    eyebrow?: string;
+    title?: string;
+    stats: Metric[];
+  }
   | {
-      type: "comparison";
-      eyebrow?: string;
-      title: string;
-      description?: string;
-      columns: string[];
-      rows: { label: string; values: (boolean | string)[] }[];
-    }
+    type: "comparison";
+    eyebrow?: string;
+    title: string;
+    description?: string;
+    columns: string[];
+    rows: { label: string; values: (boolean | string)[] }[];
+  }
   | {
-      type: "faq";
-      eyebrow?: string;
-      title?: string;
-      items: { q: string; a: string }[];
-    }
+    type: "faq";
+    eyebrow?: string;
+    title?: string;
+    items: { q: string; a: string }[];
+  }
   | {
-      type: "cta";
-      title: string;
-      description?: string;
-      primary: CTA;
-      secondary?: CTA;
-    };
+    type: "cta";
+    title: string;
+    description?: string;
+    primary: CTA;
+    secondary?: CTA;
+  };
 
 export type Product = {
   /** URL segment: /products/<slug> */
   slug: string;
   /** Product image URL. */
   productImg?: string;
+
+  productImgThird?: string;
   name: string;
   /** One-line positioning statement, shown on cards and detail hero. */
   tagline: string;

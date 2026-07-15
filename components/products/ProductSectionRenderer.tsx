@@ -6,15 +6,19 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { ProductIcon } from "./ProductIcon";
 import { ProductFaq } from "./ProductFaq";
-import type { ProductSection } from "@/lib/data/types";
+import type { Product, ProductSection } from "@/lib/data/types";
 import { cn } from "@/lib/utils";
+import { products } from "@/lib/data/products";
+import { asset } from "@/lib/basePath";
 
 export function ProductSectionRenderer({
   section,
   index,
+  product,
 }: {
   section: ProductSection;
   index: number;
+  product: Product;
 }) {
   const tone = index % 2 === 0 ? "light" : "mist";
 
@@ -79,35 +83,37 @@ export function ProductSectionRenderer({
               </div>
 
               <div className={cn(section.reverse && "lg:order-1")}>
-                <div className="ring-gradient relative overflow-hidden rounded-2xl bg-mist p-6 shadow-card">
-                  <div
-                    className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blurple-500/15 blur-3xl"
-                    aria-hidden
-                  />
-                  {section.metrics && section.metrics.length > 0 ? (
-                    <div className="relative grid grid-cols-2 gap-3">
-                      {section.metrics.map((m) => (
-                        <div
-                          key={m.label}
-                          className="rounded-xl border border-line bg-white p-5"
-                        >
-                          <p className="text-gradient font-display text-3xl font-bold tracking-tight">
-                            {m.value}
-                          </p>
-                          <p className="mt-1 text-sm leading-snug text-slate">
-                            {m.label}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <div className="relative flex h-48 items-center justify-center">
-                      <span className="font-display text-2xl font-semibold text-gradient">
-                        {section.title}
-                      </span>
-                    </div>
-                  )}
-                </div>
+                {section.productImgSecond ? (<img src={asset(section.productImgSecond)} />) : (
+                  <div className="ring-gradient relative overflow-hidden rounded-2xl bg-mist p-6 shadow-card">
+                    <div
+                      className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blurple-500/15 blur-3xl"
+                      aria-hidden
+                    />ldkaj
+                    {section.metrics && section.metrics.length > 0 ? (
+                      <div className="relative grid grid-cols-2 gap-3">
+                        {section.metrics.map((m) => (
+                          <div
+                            key={m.label}
+                            className="rounded-xl border border-line bg-white p-5"
+                          >
+                            <p className="text-gradient font-display text-3xl font-bold tracking-tight">
+                              {m.value}
+                            </p>
+                            <p className="mt-1 text-sm leading-snug text-slate">
+                              {m.label}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="relative flex h-48 items-center justify-center">
+                        <span className="font-display text-2xl font-semibold text-gradient">
+                          {section.title}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </Container>

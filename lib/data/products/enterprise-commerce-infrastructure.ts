@@ -15,7 +15,7 @@ export const enterpriseCommerceInfrastructure: Product = {
   icon: "Boxes",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/enterprise/02.png",
+  productImg: "/assets/images/enterprise-e-com/02.png",
   shortDescription:
     "A complete white-label commerce and delivery ecosystem — your brand, your customers, your economics. Built for grocery, food, pharmacy, cloud kitchens, and multi-branch retail at enterprise scale.",
   industries: [

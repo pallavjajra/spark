@@ -15,7 +15,10 @@ export const propertyOs: Product = {
   icon: "Building2",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/propertyManagement/01.png",
+  productImg: "/assets/images/propertyManagementSystem/01.png",
+
+  productImgThird: "/assets/images/propertyManagementSystem/03.png",
+
   shortDescription:
     "A comprehensive multi-tenant property management platform with lease administration, billing, finance, maintenance, and tenant self-service—built for Global Companies.",
   industries: ["property-management"],
@@ -75,6 +78,7 @@ export const propertyOs: Product = {
       type: "split-feature",
       eyebrow: "Operations",
       title: "The Digital Backbone for Property Teams",
+      productImgSecond: "/assets/images/propertyManagementSystem/02.png",
       description:
         "PropertyOS consolidates every operational domain—leasing, billing, maintenance, HR, procurement, finance—into one modular platform. No more silos or spreadsheets.",
       bullets: [
@@ -93,6 +97,7 @@ export const propertyOs: Product = {
       type: "split-feature",
       eyebrow: "Control & Visibility",
       title: "Audit, Compliance, and Real-Time Reporting",
+      productImgSecond: "/assets/images/propertyManagementSystem/03.png",
       description:
         "Every state-changing action is logged. Full audit trail, role-based access control with 13+ roles, and drill-down analytics for decision-makers.",
       bullets: [
@@ -112,6 +117,7 @@ export const propertyOs: Product = {
       type: "split-feature",
       eyebrow: "Channels",
       title: "Four Apps, One Backend",
+      productImgSecond: "/assets/images/propertyManagementSystem/04.png",
       description:
         "A tailored experience for every stakeholder—admins, staff, tenants, and vendors—all backed by a single modular NestJS monolith.",
       bullets: [

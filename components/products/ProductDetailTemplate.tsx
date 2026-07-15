@@ -34,7 +34,7 @@ export function ProductDetailTemplate({ product }: { product: Product }) {
             <ArrowLeft className="h-3.5 w-3.5" /> All products
           </Link>
 
-          <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div className="mt-8 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div>
               <div className="flex items-center gap-3">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blurple-500 to-sky-500 text-white shadow-glow">
@@ -142,7 +142,7 @@ export function ProductDetailTemplate({ product }: { product: Product }) {
 
       {/* Data-driven sections */}
       {sections.map((s, i) => (
-        <ProductSectionRenderer key={i} section={s} index={i} />
+        <ProductSectionRenderer key={i} section={s} index={i} product={product} />
       ))}
 
       {/* Closing CTA (only if the product didn't end with its own) */}
