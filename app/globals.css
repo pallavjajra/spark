@@ -1,0 +1,249 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Spark brand — warm pastel canvas, spark-orange accent, near-black ink */
+  --color-ink: #16130f;        /* headings — warm near-black */
+  --color-slate: #5b534b;      /* body text — warm gray */
+  --color-mist: #faf6f1;       /* light section bg — warm cream */
+  --color-cloud: #f3ece2;      /* slightly deeper warm */
+  --color-line: #ece5da;       /* warm borders */
+
+  /* warm neutral grays (override the cool default slate steps used across the UI) */
+  --color-slate-300: #c5bcb1;
+  --color-slate-400: #a89d90;
+  --color-slate-500: #766d63;
+  --color-slate-600: #5b534b;
+
+  /* spark orange — brand primary (mapped onto the legacy "blurple"/"electric" names) */
+  --color-blurple-300: #fbcb85;
+  --color-blurple-400: #f8a646;
+  --color-blurple-500: #f5901e; /* brand primary — spark orange */
+  --color-blurple-600: #e2760e;
+  --color-blurple-700: #b95e0b;
+
+  /* warm secondary accents (peach / coral / rose) */
+  --color-sky-400: #ffc074;
+  --color-sky-500: #fca63f;
+  --color-mintx-400: #ffa07a;
+  --color-mintx-500: #f97e50;
+  --color-coral-400: #ff93b0;
+  --color-coral-500: #fb6f98;
+  --color-peach-400: #ffd8a8;
+
+  /* legacy aliases — repointed to the warm scale */
+  --color-navy-950: #120f0c;
+  --color-navy-900: #1a1511;
+  --color-navy-800: #241d17;
+  --color-navy-700: #33291f;
+  --color-navy-600: #443629;
+  --color-electric-700: #b95e0b;
+  --color-electric-600: #e2760e;
+  --color-electric-500: #f5901e;
+  --color-electric-400: #f8a646;
+  --color-electric-300: #fbcb85;
+  --color-iris: #f2729e;
+  --color-aqua: #ffc074;
+
+  /* warm soft layered shadows */
+  --shadow-soft: 0 2px 5px -1px rgba(60, 48, 34, 0.13), 0 1px 3px -1px rgba(30, 22, 15, 0.1);
+  --shadow-card: 0 13px 27px -8px rgba(60, 48, 34, 0.17), 0 8px 16px -10px rgba(30, 22, 15, 0.1);
+  --shadow-lift: 0 24px 48px -14px rgba(60, 48, 34, 0.2), 0 12px 24px -16px rgba(30, 22, 15, 0.12);
+  --shadow-xl: 0 50px 100px -28px rgba(60, 48, 34, 0.28), 0 30px 60px -32px rgba(30, 22, 15, 0.18);
+  --shadow-glow: 0 16px 40px -12px rgba(245, 144, 30, 0.45);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-slate);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+  ::selection {
+    background: rgba(245, 144, 30, 0.24);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-blurple-500);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+/* ---- Gradient text ---- */
+.text-gradient {
+  background-image: linear-gradient(100deg, #f5901e 0%, #ff7a3d 46%, #ffb347 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-warm {
+  background-image: linear-gradient(100deg, #f5901e 0%, #fb6f98 55%, #ffc074 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-light {
+  background-image: linear-gradient(100deg, #ffffff 0%, #ffe0c2 55%, #ffb877 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- Backgrounds & textures ---- */
+.bg-grid-light {
+  background-image:
+    linear-gradient(rgba(38, 28, 18, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 28, 18, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.bg-grid-dark {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.bg-dots-dark {
+  background-image: radial-gradient(rgba(38, 28, 18, 0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+/* The signature flowing gradient banner — warm pastel mesh (lavender → pink → peach → cream) */
+.bg-flow {
+  background:
+    radial-gradient(42% 60% at 14% 24%, rgba(214, 178, 233, 0.55) 0%, transparent 60%),
+    radial-gradient(40% 56% at 38% 80%, rgba(247, 184, 211, 0.55) 0%, transparent 62%),
+    radial-gradient(46% 60% at 72% 30%, rgba(252, 203, 165, 0.7) 0%, transparent 62%),
+    radial-gradient(52% 66% at 90% 72%, rgba(255, 226, 198, 0.65) 0%, transparent 66%),
+    radial-gradient(60% 80% at 50% 46%, rgba(255, 210, 165, 0.32) 0%, transparent 72%),
+    linear-gradient(165deg, #fdf6ef 0%, #fbf2ea 100%);
+}
+
+.mask-fade-edges {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.mask-fade-b {
+  -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent);
+  mask-image: linear-gradient(180deg, #000 55%, transparent);
+}
+
+/* ---- Angled section edges (Stripe diagonal cuts) ---- */
+.clip-angle-b {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4.5vw), 0 100%);
+}
+.clip-angle-t {
+  clip-path: polygon(0 4.5vw, 100% 0, 100% 100%, 0 100%);
+}
+.clip-angle-tb {
+  clip-path: polygon(0 4.5vw, 100% 0, 100% calc(100% - 4.5vw), 0 100%);
+}
+
+/* ---- Glass & gradient ring ---- */
+.glass-dark {
+  background: rgba(22, 17, 13, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.glass-light {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(38, 28, 18, 0.07);
+}
+.ring-gradient {
+  position: relative;
+  isolation: isolate;
+}
+.ring-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(130deg, rgba(245, 144, 30, 0.7), rgba(255, 176, 90, 0.4) 50%, rgba(249, 126, 80, 0.5));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ---- Keyframes ---- */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 38s linear infinite; }
+.animate-marquee-slow { animation: marquee 64s linear infinite; }
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+.animate-floaty { animation: floaty 9s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.08); }
+}
+.animate-pulse-glow { animation: pulse-glow 9s ease-in-out infinite; }
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(6%, -5%) scale(1.08); }
+  66% { transform: translate(-5%, 4%) scale(0.96); }
+}
+.animate-drift { animation: drift 18s ease-in-out infinite; }
+.animate-drift-2 { animation: drift 22s ease-in-out infinite reverse; }
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spin-slow 26s linear infinite; }
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(91, 83, 75, 0.32);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(91, 83, 75, 0.5); background-clip: padding-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .animate-marquee, .animate-marquee-slow, .animate-floaty, .animate-pulse-glow,
+  .animate-spin-slow, .animate-drift, .animate-drift-2 {
+    animation: none !important;
+  }
+}
