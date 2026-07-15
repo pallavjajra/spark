@@ -16,6 +16,7 @@ export const healthaxis: Product = {
   icon: "HeartPulse",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/iwebwiser health axis/01.png",
   shortDescription:
     "An AI-powered, ADHICS-compliant healthcare ecosystem connecting patients, providers, and insurers — with insurance-aware provider discovery, eligibility checks, appointment booking, and real-time records in one platform.",
   industries: ["healthcare-insurance"],

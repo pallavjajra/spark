@@ -18,6 +18,7 @@ export const nexusOs: Product = {
   icon: "Network",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/nexus os/01.png",
   shortDescription:
     "A unified, modular ERP that brings HR, attendance, payroll, supply chain, finance, and site operations onto one approval-driven platform — giving multi-site enterprises real-time visibility and a complete audit trail.",
   industries: ["enterprise-operations"],

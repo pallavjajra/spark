@@ -20,6 +20,7 @@ export const retailNest: Product = {
   icon: "Sofa",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/retail nest/01.png",
   shortDescription:
     "A retail management CMS for home-furnishings and home-goods brands — centralizing inventory accuracy, staff task management, and a rich, searchable storefront with detailed product specs, wishlists, and cart, so operations and customer experience finally run as one.",
   industries: ["retail-ecommerce"],

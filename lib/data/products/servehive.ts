@@ -24,6 +24,7 @@ export const serveHive: Product = {
   icon: "Handshake",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/serve hive/01.png",
   shortDescription:
     "A complete local-services marketplace — a customer app, a provider app, and a centralized admin panel — that connects customers with verified local professionals to discover, quote, book, track, and review services end to end, across home maintenance, plumbing, electrical, cleaning, and more.",
   industries: ["local-services"],

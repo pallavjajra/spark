@@ -15,6 +15,7 @@ export const constructos: Product = {
   icon: "Building",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/constructor management/01.png",
   shortDescription:
     "Unified web and mobile platform enabling construction companies to manage the complete project lifecycle from planning through execution, billing, and analytics.",
   industries: ["construction"],

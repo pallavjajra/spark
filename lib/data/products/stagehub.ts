@@ -18,6 +18,7 @@ export const stageHub: Product = {
   icon: "Music",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/Stage Hub/01.png",
   shortDescription:
     "A one-stop platform for musicians and performing artists — a global gig marketplace, direct-to-fan instrument sales, a collaborative community, and income tools that turn one-off bookings into steady, diversified revenue.",
   industries: ["media-entertainment"],

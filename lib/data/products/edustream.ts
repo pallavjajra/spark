@@ -18,6 +18,7 @@ export const eduStream: Product = {
   icon: "GraduationCap",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/edu stream/01.png",
   shortDescription:
     "A scalable e-learning platform that lets multiple institutions host courses, run buffer-free live and recorded lectures over WebRTC, evaluate content before publishing, and keep students engaged with built-in chat and collaboration — in English and Arabic.",
   industries: ["education-elearning"],

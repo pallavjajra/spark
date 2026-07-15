@@ -18,6 +18,7 @@ export const freightLedger: Product = {
   icon: "Truck",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/Freight-ledger/01.png",
   shortDescription:
     "An all-in-one logistics management system for trucking and transport companies — digital consignment notes (bilty/LR), automated invoicing, multi-branch coordination, and built-in accounting, with a driver mobile app and a manager web console.",
   industries: ["logistics-delivery"],

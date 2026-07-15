@@ -17,6 +17,7 @@ export const nasNeuron: Product = {
   icon: "Fingerprint",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/NAS Neuron/01.png",
   shortDescription:
     "An IAM automation platform that runs access recertification campaigns, digitizes joiner onboarding, and records every action in an immutable, audit-ready trail — built for ADHICS v2 and UAE PDPL compliance.",
   industries: ["security-compliance"],
