@@ -17,7 +17,7 @@ export const nasNeuron: Product = {
   icon: "Fingerprint",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/NAS Neuron/01.png",
+  productImg: "/assets/images/NasNeuron/01.png",
   shortDescription:
     "An IAM automation platform that runs access recertification campaigns, digitizes joiner onboarding, and records every action in an immutable, audit-ready trail — built for ADHICS v2 and UAE PDPL compliance.",
   industries: ["security-compliance"],
@@ -76,6 +76,7 @@ export const nasNeuron: Product = {
     {
       type: "split-feature",
       eyebrow: "Module 1 — Recertification",
+      productImgSecond: "/assets/images/NasNeuron/01.png",
       title: "Internal & External Access Recertification",
       description:
         "On a regular schedule, NAS Neuron asks each manager to confirm their team still needs the access they have. Standard users are reviewed quarterly, privileged users monthly. Internal staff come from Active Directory; external partner users come from your custom applications.",
@@ -94,6 +95,7 @@ export const nasNeuron: Product = {
     {
       type: "split-feature",
       eyebrow: "Module 2 — Joiner Process",
+      productImgSecond: "/assets/images/NasNeuron/02.png",
       title: "Digital Joiner Onboarding",
       description:
         "Replace paper new-starter forms with a fully tracked digital workflow. HR submits a New Starter form, the line manager picks the access package, and NAS Neuron raises a complete provisioning ticket for IT — with reminders and audit at every step.",
@@ -113,6 +115,7 @@ export const nasNeuron: Product = {
     {
       type: "split-feature",
       eyebrow: "Control & Visibility",
+      productImgSecond: "/assets/images/NasNeuron/03.png",
       title: "Live CISO Dashboard & Auto-Escalation",
       description:
         "A live operational view of both modules — not a static report. The CISO sees every active campaign, overdue review, pending revocation, and joiner in flight, while automatic chasers and escalations run in the background.",

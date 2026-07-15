@@ -77,6 +77,7 @@ export const freightLedger: Product = {
     {
       type: "split-feature",
       eyebrow: "Documents",
+      productImgSecond: "/assets/images/Freight-ledger/01.png",
       title: "Consignment Notes & Receipts",
       description:
         "Replace the paper register with a secure digital ledger of every truck receipt. Each bilty (lorry receipt) is created, stored, and tracked in one place — with no lost documents and full traceability from pickup to delivery.",
@@ -94,6 +95,7 @@ export const freightLedger: Product = {
     {
       type: "split-feature",
       eyebrow: "Billing",
+      productImgSecond: "/assets/images/Freight-ledger/02.png",
       title: "Invoicing & Collections",
       description:
         "Turn receipts into invoices in a click and keep collections under control. FreightLedger tracks what every customer owes and every vendor is owed, so cash flow is always visible.",
@@ -112,6 +114,7 @@ export const freightLedger: Product = {
     {
       type: "split-feature",
       eyebrow: "Finance",
+      productImgSecond: "/assets/images/Freight-ledger/03.png",
       title: "Built-In Accounting & Reporting",
       description:
         "Every receipt and invoice rolls up into real accounts. Profit & loss, balance sheets, and party ledgers are generated automatically from daily operations — no separate bookkeeping software required.",

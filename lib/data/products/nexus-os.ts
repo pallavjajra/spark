@@ -18,7 +18,7 @@ export const nexusOs: Product = {
   icon: "Network",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/nexus os/01.png",
+  productImg: "/assets/images/nexusOs/01.png",
   shortDescription:
     "A unified, modular ERP that brings HR, attendance, payroll, supply chain, finance, and site operations onto one approval-driven platform — giving multi-site enterprises real-time visibility and a complete audit trail.",
   industries: ["enterprise-operations"],
@@ -77,6 +77,7 @@ export const nexusOs: Product = {
     {
       type: "split-feature",
       eyebrow: "Workforce",
+      productImgSecond: "/assets/images/nexusOs/01.png",
       title: "People: HR, Attendance & Payroll",
       description:
         "Manage the full employee lifecycle — onboarding, org structure, leave, transfers — with geofenced attendance that flows straight into automated, error-free payroll.",
@@ -95,6 +96,7 @@ export const nexusOs: Product = {
     {
       type: "split-feature",
       eyebrow: "Spend Control",
+      productImgSecond: "/assets/images/nexusOs/02.png",
       title: "Procurement & Finance",
       description:
         "Every purchase is justified, approved, and within budget before a single rupee is committed. Procurement, inventory, and finance share one ledger and one budget engine.",
@@ -114,6 +116,7 @@ export const nexusOs: Product = {
     {
       type: "split-feature",
       eyebrow: "Visibility",
+      productImgSecond: "/assets/images/nexusOs/03.png",
       title: "Sites, Projects & Tasks",
       description:
         "Each site is a command centre linking workforce, procurement, and finance into one view — with cost-centre reporting that shows exactly what every site earns versus spends.",

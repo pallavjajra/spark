@@ -18,7 +18,7 @@ export const stageHub: Product = {
   icon: "Music",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/Stage Hub/01.png",
+  productImg: "/assets/images/StageHub/01.png",
   shortDescription:
     "A one-stop platform for musicians and performing artists — a global gig marketplace, direct-to-fan instrument sales, a collaborative community, and income tools that turn one-off bookings into steady, diversified revenue.",
   industries: ["media-entertainment"],
@@ -77,6 +77,7 @@ export const stageHub: Product = {
     {
       type: "split-feature",
       eyebrow: "Marketplace",
+      productImgSecond: "/assets/images/StageHub/01.png",
       title: "Gigs Across Every Discipline",
       description:
         "StageHub opens up global opportunities for artists — live performances, studio recording, and teaching — in one searchable marketplace built around how musicians actually work.",
@@ -94,6 +95,7 @@ export const stageHub: Product = {
     {
       type: "split-feature",
       eyebrow: "Commerce",
+      productImgSecond: "/assets/images/StageHub/01.png",
       title: "Sell Instruments Directly to Fans",
       description:
         "StageHub is more than jobs. Artists can sell their instruments and gear directly to the fans who follow them — turning a fan base into a marketplace and creating an extra, recurring income stream.",
@@ -112,6 +114,7 @@ export const stageHub: Product = {
     {
       type: "split-feature",
       eyebrow: "Community",
+      productImgSecond: "/assets/images/StageHub/03.png",
       title: "A Network Built for Artists",
       description:
         "Musicians do their best work together. StageHub gives artists a collaborative community to connect, share resources, and learn — while income tools help reduce the revenue volatility that comes with the craft.",

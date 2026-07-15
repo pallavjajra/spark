@@ -24,7 +24,7 @@ export const serveHive: Product = {
   icon: "Handshake",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/serve hive/01.png",
+  productImg: "/assets/images/serveHive/01.png",
   shortDescription:
     "A complete local-services marketplace — a customer app, a provider app, and a centralized admin panel — that connects customers with verified local professionals to discover, quote, book, track, and review services end to end, across home maintenance, plumbing, electrical, cleaning, and more.",
   industries: ["local-services"],
@@ -83,6 +83,7 @@ export const serveHive: Product = {
     {
       type: "split-feature",
       eyebrow: "For Customers",
+      productImgSecond: "/assets/images/serveHive/01.png",
       title: "Find, compare, and hire with confidence",
       description:
         "Customers discover verified local professionals in seconds, post exactly what they need, and choose the best offer — then stay informed from booking to completion.",
@@ -101,6 +102,7 @@ export const serveHive: Product = {
     {
       type: "split-feature",
       eyebrow: "For Providers",
+      productImgSecond: "/assets/images/serveHive/02.png",
       title: "Win more jobs and grow your business",
       description:
         "Professionals turn the platform into a steady pipeline — qualified leads, fast quoting, organized bookings, and the analytics to see what's working.",
@@ -120,6 +122,7 @@ export const serveHive: Product = {
     {
       type: "split-feature",
       eyebrow: "For Administrators",
+      productImgSecond: "/assets/images/serveHive/03.png",
       title: "Complete control of your marketplace",
       description:
         "A centralized admin panel governs the whole ecosystem — onboarding, verification, categories, and oversight — so the marketplace stays trustworthy and runs smoothly at scale.",

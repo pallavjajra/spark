@@ -18,7 +18,7 @@ export const eduStream: Product = {
   icon: "GraduationCap",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/edu stream/01.png",
+  productImg: "/assets/images/eduStream/01.png",
   shortDescription:
     "A scalable e-learning platform that lets multiple institutions host courses, run buffer-free live and recorded lectures over WebRTC, evaluate content before publishing, and keep students engaged with built-in chat and collaboration — in English and Arabic.",
   industries: ["education-elearning"],
@@ -77,6 +77,7 @@ export const eduStream: Product = {
     {
       type: "split-feature",
       eyebrow: "Streaming",
+      productImgSecond: "/assets/images/eduStream/01.png",
       title: "Live & On-Demand Lectures",
       description:
         "Built on WebRTC, EduStream streams live classes without buffering or quality loss and turns every session into an on-demand recording — so students learn live or catch up later.",
@@ -94,6 +95,7 @@ export const eduStream: Product = {
     {
       type: "split-feature",
       eyebrow: "Institutions",
+      productImgSecond: "/assets/images/eduStream/02.png",
       title: "One Platform, Many Universities",
       description:
         "EduStream hosts varied courses from multiple universities under one roof. Each institution runs its own diploma and certificate programs, evaluated for quality before they ever reach a student.",
@@ -112,6 +114,7 @@ export const eduStream: Product = {
     {
       type: "split-feature",
       eyebrow: "Engagement",
+      productImgSecond: "/assets/images/eduStream/03.png",
       title: "Interactive, Connected Learning",
       description:
         "Learning is more than watching video. EduStream keeps students engaged with group discussions, direct messaging, document sharing, and built-in support — all in English and Arabic.",

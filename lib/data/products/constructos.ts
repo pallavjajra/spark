@@ -15,7 +15,7 @@ export const constructos: Product = {
   icon: "Building",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/constructor management/01.png",
+  productImg: "/assets/images/constructorManagement/01.png",
   shortDescription:
     "Unified web and mobile platform enabling construction companies to manage the complete project lifecycle from planning through execution, billing, and analytics.",
   industries: ["construction"],
@@ -73,6 +73,7 @@ export const constructos: Product = {
   sections: [
     {
       type: "split-feature",
+      productImgSecond: "/assets/images/constructorManagement/01.png",
       title: "Unified Web & Mobile Ecosystem",
       description:
         "ConstructOS connects office and site through a single platform, eliminating data silos and enabling real-time collaboration across your entire team.",
@@ -90,6 +91,7 @@ export const constructos: Product = {
     },
     {
       type: "split-feature",
+      productImgSecond: "/assets/images/constructorManagement/02.png",
       title: "Complete Project Lifecycle Management",
       description:
         "Manage every phase of construction from planning through final handover, with specialized tools for procurement, execution, quality, and billing.",
@@ -109,6 +111,7 @@ export const constructos: Product = {
     },
     {
       type: "split-feature",
+      productImgSecond: "/assets/images/constructorManagement/03.png",
       title: "AI-Powered Insights & Reporting",
       description:
         "Move beyond static reports with intelligent analytics that surface trends, flag risks, and support data-driven decision-making across every project.",

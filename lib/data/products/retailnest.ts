@@ -20,7 +20,7 @@ export const retailNest: Product = {
   icon: "Sofa",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
-  productImg: "/assets/images/retail nest/01.png",
+  productImg: "/assets/images/retailNest/01.png",
   shortDescription:
     "A retail management CMS for home-furnishings and home-goods brands — centralizing inventory accuracy, staff task management, and a rich, searchable storefront with detailed product specs, wishlists, and cart, so operations and customer experience finally run as one.",
   industries: ["retail-ecommerce"],
@@ -79,6 +79,7 @@ export const retailNest: Product = {
     {
       type: "split-feature",
       eyebrow: "Operations",
+      productImgSecond: "/assets/images/retailNest/01.png",
       title: "Inventory & Staff, Under Control",
       description:
         "Without a central system, home-goods retailers lose stock and stall orders. RetailNest gives managers one place to track inventory accurately, monitor employee activity, and assign tasks with full accountability.",
@@ -96,6 +97,7 @@ export const retailNest: Product = {
     {
       type: "split-feature",
       eyebrow: "Storefront",
+      productImgSecond: "/assets/images/retailNest/02.png",
       title: "A Buying Experience Built for Home Goods",
       description:
         "Furniture and furnishings are detail-driven purchases. RetailNest pairs a clean, easy-to-navigate storefront with the rich product information shoppers need — fabric quality, dimensions, thread count — plus wishlist and cart.",
@@ -114,6 +116,7 @@ export const retailNest: Product = {
     {
       type: "split-feature",
       eyebrow: "Outcomes",
+      productImgSecond: "/assets/images/retailNest/03.png",
       title: "Efficiency That Customers Feel",
       description:
         "When operations and the storefront run on one system, the whole business improves — faster fulfillment, fewer losses, lower costs, and a shopping experience that builds loyalty.",

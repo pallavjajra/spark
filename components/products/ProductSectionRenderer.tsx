@@ -88,7 +88,7 @@ export function ProductSectionRenderer({
                     <div
                       className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blurple-500/15 blur-3xl"
                       aria-hidden
-                    />ldkaj
+                    />
                     {section.metrics && section.metrics.length > 0 ? (
                       <div className="relative grid grid-cols-2 gap-3">
                         {section.metrics.map((m) => (
