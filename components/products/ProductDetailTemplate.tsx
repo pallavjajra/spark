@@ -8,6 +8,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import { ProductIcon } from "./ProductIcon";
 import { ProductSectionRenderer } from "./ProductSectionRenderer";
 import type { Product } from "@/lib/data/types";
+import { asset } from "@/lib/basePath";
 
 export function ProductDetailTemplate({ product }: { product: Product }) {
   const hero = product.hero;
@@ -33,7 +34,7 @@ export function ProductDetailTemplate({ product }: { product: Product }) {
             <ArrowLeft className="h-3.5 w-3.5" /> All products
           </Link>
 
-          <div className="mt-8 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
             <div>
               <div className="flex items-center gap-3">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blurple-500 to-sky-500 text-white shadow-glow">
@@ -82,18 +83,21 @@ export function ProductDetailTemplate({ product }: { product: Product }) {
             </div>
 
             {product.metrics && product.metrics.length > 0 && (
-              <div className="ring-gradient relative overflow-hidden rounded-2xl bg-white/80 p-6 shadow-xl backdrop-blur">
-                <img src={product?.productImg} alt={product.name} />
-                {/* <div className="grid grid-cols-2 gap-3">
-                  {product.metrics.map((m) => (
-                    <div key={m.label} className="rounded-xl border border-line bg-white p-5">
-                      <p className="text-gradient font-display text-3xl font-bold tracking-tight">
-                        {m.value}
-                      </p>
-                      <p className="mt-1 text-sm leading-snug text-slate">{m.label}</p>
+              <div className="">
+                {product?.productImg ? (<img src={product?.productImg ? asset(product?.productImg) : undefined} alt={product?.name} />) : (
+                  <div className="ring-gradient relative overflow-hidden rounded-2xl bg-white/80 p-6 shadow-xl backdrop-blur">
+                    <div className="grid grid-cols-2 gap-3">
+                      {product.metrics.map((m) => (
+                        <div key={m.label} className="rounded-xl border border-line bg-white p-5">
+                          <p className="text-gradient font-display text-3xl font-bold tracking-tight">
+                            {m.value}
+                          </p>
+                          <p className="mt-1 text-sm leading-snug text-slate">{m.label}</p>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div> */}
+                  </div>
+                )}
               </div>
             )}
           </div>

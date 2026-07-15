@@ -15,6 +15,7 @@ export const propertyOs: Product = {
   icon: "Building2",
   accent: { from: "#0B57D0", to: "#00C2FF" },
   featured: true,
+  productImg: "/assets/images/propertyManagement/01.png",
   shortDescription:
     "A comprehensive multi-tenant property management platform with lease administration, billing, finance, maintenance, and tenant self-service—built for Global Companies.",
   industries: ["property-management"],
