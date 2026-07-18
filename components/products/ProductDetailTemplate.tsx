@@ -82,9 +82,11 @@ export function ProductDetailTemplate({ product }: { product: Product }) {
               </div>
             </div>
 
-            {product.metrics && product.metrics.length > 0 && (
+            {(product.productImg || (product.metrics && product.metrics.length > 0)) && (
               <div className="">
-                {product?.productImg ? (<img src={product?.productImg ? asset(product?.productImg) : undefined} alt={product?.name} />) : (
+                {product.productImg ? (
+                  <img src={asset(product.productImg)} alt={product.name} className="w-full h-auto rounded-2xl object-cover" />
+                ) : product.metrics && product.metrics.length > 0 ? (
                   <div className="ring-gradient relative overflow-hidden rounded-2xl bg-white/80 p-6 shadow-xl backdrop-blur">
                     <div className="grid grid-cols-2 gap-3">
                       {product.metrics.map((m) => (
@@ -97,7 +99,7 @@ export function ProductDetailTemplate({ product }: { product: Product }) {
                       ))}
                     </div>
                   </div>
-                )}
+                ) : null}
               </div>
             )}
           </div>

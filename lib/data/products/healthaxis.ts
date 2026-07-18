@@ -75,7 +75,7 @@ export const healthaxis: Product = {
     {
       type: "split-feature",
       eyebrow: "Patient Access",
-      productImgSecond: "/assets/images/iwebwiserHealth axis/01.png",
+      productImgSecond: "/assets/images/iwebwiserHealthAxis/01.png",
       title: "Insurance-Aware Patient Access",
       description:
         "HealthAxis is more than booking — it's an insurance-aware access system that helps patients understand coverage, find in-network providers, and book the right service without delays or confusion.",
@@ -94,7 +94,7 @@ export const healthaxis: Product = {
     {
       type: "split-feature",
       eyebrow: "One Ecosystem",
-      productImgSecond: "/assets/images/iwebwiserHealth axis/02.png",
+      productImgSecond: "/assets/images/iwebwiserHealthAxis/02.png",
       title: "Three Apps, One HealthAxis Data Flow",
       description:
         "Patients, providers, and administrators each get a tailored surface, all working together on one shared, real-time data flow.",
@@ -114,7 +114,7 @@ export const healthaxis: Product = {
     {
       type: "split-feature",
       eyebrow: "Governance & Compliance",
-      productImgSecond: "/assets/images/iwebwiserHealth axis/03.png",
+      productImgSecond: "/assets/images/iwebwiserHealthAxis/03.png",
       title: "Secure, Compliant, and Centrally Governed",
       description:
         "A centralized Super Admin layer keeps the ecosystem scalable, secure, and compliant — governing every organization, provider, and insurance network from one place.",

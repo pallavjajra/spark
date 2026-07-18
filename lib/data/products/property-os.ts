@@ -117,7 +117,7 @@ export const propertyOs: Product = {
       type: "split-feature",
       eyebrow: "Channels",
       title: "Four Apps, One Backend",
-      productImgSecond: "/assets/images/propertyManagementSystem/04.png",
+      productImgSecond: "/assets/images/propertyManagementSystem/03.png",
       description:
         "A tailored experience for every stakeholder—admins, staff, tenants, and vendors—all backed by a single modular NestJS monolith.",
       bullets: [
