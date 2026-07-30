@@ -107,30 +107,35 @@ export const aiCategories: AICategory[] = [
       {
         icon: "workflow",
         title: "Workflow Automation",
+        imgAI: "/assets/aiAutomation/WorkflowAutomation.svg",
         description:
           "Connect apps and orchestrate end-to-end workflows that run themselves, with humans in the loop only where it matters.",
       },
       {
         icon: "cog",
         title: "Process Automation",
+        imgAI: "/assets/aiAutomation/ProcessAutomation.svg",
         description:
           "Replace repetitive back-office processes with reliable, auditable automation that scales with you.",
       },
       {
         icon: "headset",
         title: "Customer Support Automation",
+        imgAI: "/assets/aiAutomation/CustomerSupportAutomation.svg",
         description:
           "Deflect tickets and resolve issues instantly with an AI-first support layer that knows your product.",
       },
       {
         icon: "target",
         title: "Sales Automation",
+        imgAI: "/assets/aiAutomation/SalesAutomation.svg",
         description:
           "Automate outreach, lead scoring, and pipeline hygiene so your reps spend their time actually selling.",
       },
       {
         icon: "megaphone",
         title: "Marketing Automation",
+        imgAI: "/assets/aiAutomation/MarketingAutomation.svg",
         description:
           "Personalised campaigns, content, and lifecycle journeys that adapt and optimise themselves.",
       },
